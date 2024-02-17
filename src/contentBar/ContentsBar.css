@@ -1,0 +1,51 @@
+
+:root{
+    --content-button-color:linear-gradient(45deg,#f10202e0, #fb720ec9);
+}
+.bodyContentsBar{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ContainerContentsBar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: scroll;
+    background: linear-gradient(82deg, #716c6c, #7f777785);
+    height: 100vh;
+    width: fit-content;
+}
+
+button.ContentButton {
+    padding: 10px;
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 2px 9px;
+    background: var(--content-button-color);
+    /* outline: none; */
+    border: none;
+    color: white;
+    font-weight: 800;
+    border-radius: 0px 10px 0px 10px;
+    transition: scale 0.4s ease-in 0.4s;
+}
+
+button.ContentButton:hover{
+    background: white;
+    color:rgb(216, 39, 8);
+    border-radius: 0px 10px 0px 10px;
+    border:3px solid  rgb(255, 111, 0);
+    padding: 8px;
+
+}
+button.ContentButton:active{
+    background: white;
+    color:rgb(8, 122, 216);
+    border-radius: 0px 10px 0px 10px;
+    border:3px solid  rgb(23, 131, 225);
+    padding: 8px;
+    transform: scale(1.1);
+}
