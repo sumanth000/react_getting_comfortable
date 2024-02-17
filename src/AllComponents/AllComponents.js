@@ -5,7 +5,7 @@ import ContentBar from "../contentBar/ContentsBar"
 import './AllComponents.css'
 import CombinedComponent from "../combining_components/CombinedComponent";
 import Parent1 from "../passing_data/parentToChild/parent1";
-import Parent2 from "../passing_data/ChildToParent/parent2";
+import Parent2 from "../passing_data/childToParent/parent2";
  const AllComponents=()=>{
 
 

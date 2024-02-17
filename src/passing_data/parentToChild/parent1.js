@@ -3,7 +3,6 @@ import Child1 from "./child1";
 
 
 import parent1styles from './css_folders/parent1.module.css'
-import Parent2 from "../ChildToParent/parent2";
 
 const  Parent1 =()=>{
 
