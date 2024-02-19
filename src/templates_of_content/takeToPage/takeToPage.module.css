@@ -1,0 +1,20 @@
+.content{
+    margin:20px 20px;
+    width: fit-content;
+    height:fit-content;
+    padding:15px;
+    background-color: rgb(21, 115, 216);
+    border-radius: 5px;
+    color:rgb(233, 233, 233);
+    border:yellow;
+    box-shadow: 2px 2px 5px black;
+    position:absolute;
+    right:10px;
+    top:10px;
+
+}
+
+.content:active{
+    transform: scale(0.9);
+    
+}

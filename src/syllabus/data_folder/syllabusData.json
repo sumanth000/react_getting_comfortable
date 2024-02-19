@@ -1,0 +1,38 @@
+[
+    {
+        "id":"1",
+        "name": "FUNCTION COMPONENT"
+         ,"category":"Basic"
+
+    },
+    {
+        "id":"2",
+        "name": "CLASS COMPONENT"
+        ,"category":"Basic"
+
+
+    },
+    {
+        "id":"3",
+        "name": "PARNENT TO CHILD"
+        ,"category":"Basic"
+
+
+    },
+    {
+        "id":"4",
+        "name": "CHILD TO PARENT"
+        ,"category":"Basic"
+
+
+    },
+
+    {
+        "id":"5",
+        "name": "ROUTING"
+        ,"category":"Basic"
+
+    }
+
+
+]

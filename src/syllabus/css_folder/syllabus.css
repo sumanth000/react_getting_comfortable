@@ -1,0 +1,36 @@
+
+.MuiDataGrid-columnHeaders.MuiDataGrid-withBorderColor.css-1iyq7zh-MuiDataGrid-columnHeaders {
+    background: #1daece;
+    font-weight: 900;
+}
+
+.css-az8st9-MuiDataGrid-root.MuiDataGrid-autoHeight {
+    height: auto;
+    display: flex;
+    height: 100vh;
+    width: 80vw;
+    margin: 20px 10px;
+    border: 2px solid grey;
+    background: linear-gradient(45deg, #15c0b58d,rgba(21, 158, 189, 0.527));
+}
+
+.css-t89xny-MuiDataGrid-columnHeaderTitle {
+    font-weight: 900;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    /* font-weight: var(--unstable_DataGrid-headWeight); */
+}
+
+alignCenter .MuiDataGrid-columnHeaderTitleContainer {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    background: white;
+}
+.MuiDataGrid-row:not(.MuiDataGrid-row--dynamicHeight)>.MuiDataGrid-cell {
+    border: 2px solid white;
+    overflow: hidden;
+    white-space: nowrap;
+}

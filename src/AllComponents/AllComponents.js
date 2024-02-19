@@ -1,40 +1,72 @@
 import FirstComponent from "../combining_components/FirstComponent";
-import { BrowserRouter as Router, Routes,Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes,Route, Switch, Link ,useLocation} from 'react-router-dom';
 import SecondComponent from "../combining_components/SecondComponent";
 import ContentBar from "../contentBar/ContentsBar"
 import './AllComponents.css'
 import CombinedComponent from "../combining_components/CombinedComponent";
 import Parent1 from "../passing_data/parentToChild/parent1";
 import Parent2 from "../passing_data/childToParent/parent2";
- const AllComponents=()=>{
+import { useState } from "react";
+import Syllabus from "../syllabus/Syllabus";
+import RoutingTechniques from "../routing_techniques/routingTechniques";
+import WindowMethodComponent from "../routing_techniques/navigated_components/windowMethodComponent";
+import UseNavigateComponent from "../routing_techniques/navigated_components/useNavigationComponent";
+ const Mainbody=()=>{
 
 
+  const location = useLocation();
+  const hideContentBarPaths = ['/first', '/second', '/combined', '/parentToChild', '/childToParent'];
+  const showContentBarPaths = ['/syllabus'];
+  console.log('im in the path',location.pathname);
+  const shouldShowContentBar = !hideContentBarPaths.includes(location.pathname);
 
 
    return (
 
+    
+
      <div className="mainbody">
        <div className="leftdiv">
-         <ContentBar></ContentBar>
+       {/* {shouldShowContentBar&&  <ContentBar></ContentBar>} */}
+       <ContentBar></ContentBar>
        </div>
 
        
 
-       <Router>
-         <Routes>
+       <Routes>
            <Route path="/first" element={<FirstComponent />} />
            <Route path="/second" element={<SecondComponent />} />
            <Route path="/combined" element={<CombinedComponent />} />
            <Route path="/parentToChild" element={<Parent1 />} />
            <Route path="/childToParent" element={<Parent2 />} />
+           <Route path="/syllabus" element={<Syllabus />} />
+           <Route path="/routingTechniques" element={<RoutingTechniques />} />
+           <Route path="/useNavigateComponent" element={<UseNavigateComponent />} />
+           <Route path="/windowMethodComponent" element={<WindowMethodComponent />} />
+           <Route path="/useNavigateComponent" element={<UseNavigateComponent />} />
+
+
+
+
+
+
 
 
 
          </Routes>
-       </Router>
+
 
      </div>
      
     )
 }
+
+const AllComponents = () => {
+  return (
+    <Router>
+      <Mainbody />
+      
+    </Router>
+  );
+};
 export default AllComponents;
