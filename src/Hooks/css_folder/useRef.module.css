@@ -1,0 +1,31 @@
+.colorBox{
+    padding: 30px;
+    color:rgb(128, 138, 126);
+    border:2px solid grey;
+    border-radius: 12px;
+}
+
+.changeButton{
+
+font-size:12px;
+background-color: grey;
+width: fit-content;
+height:fit-content;
+padding:10px;
+transition: all 0.4ms ease-in 0.4ms;
+color:white;
+border-radius: 15px;
+}
+.changeButton:active{
+
+    transform: scale(0.89);
+    }
+
+.box{
+    display: flex;
+    width: 60vw;
+    height: fit-content;
+    justify-content: space-around;
+    align-items: center;
+    padding:20px;
+}

@@ -7,13 +7,13 @@ let TakeToPage=(props)=>{
 
 
     let navigate=()=>{
-        console.log('url ',{url})
+        // console.log('url ',{url})
         window.location.href= decodeURIComponent(url);
     }
 
     return(
         <div>
-            <div className={takeToPageStyles.content}  onClick={navigate}>GO TO {label}</div>
+            <div className={takeToPageStyles.content}  onClick={navigate}>go back to {label}</div>
         </div>
     )
 }

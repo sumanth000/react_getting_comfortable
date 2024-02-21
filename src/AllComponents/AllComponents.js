@@ -11,6 +11,12 @@ import Syllabus from "../syllabus/Syllabus";
 import RoutingTechniques from "../routing_techniques/routingTechniques";
 import WindowMethodComponent from "../routing_techniques/navigated_components/windowMethodComponent";
 import UseNavigateComponent from "../routing_techniques/navigated_components/useNavigationComponent";
+import UseStateComponent from "../Hooks/useState/useStateComponent";
+import Hooks from "../Hooks/Hooks";
+import UseEffectComponent from "../Hooks/useEffect/useEffectComponent";
+import UseContextComponent from "../Hooks/useContext/useContextComponent";
+import UseRefComponent from "../Hooks/useRef/useRefComponent";
+import CustomHookComponent from "../Hooks/customHook/customHookComponent";
  const Mainbody=()=>{
 
 
@@ -44,6 +50,15 @@ import UseNavigateComponent from "../routing_techniques/navigated_components/use
            <Route path="/useNavigateComponent" element={<UseNavigateComponent />} />
            <Route path="/windowMethodComponent" element={<WindowMethodComponent />} />
            <Route path="/useNavigateComponent" element={<UseNavigateComponent />} />
+           <Route path="/useStateComponent" element={<UseStateComponent />} />
+           <Route path="/useEffectComponent" element={<UseEffectComponent />} />
+           <Route path="/useContextComponent" element={<UseContextComponent />} />
+           <Route path="/useRefComponent" element={<UseRefComponent />} />
+           <Route path="/customHookComponent" element={<CustomHookComponent />} />
+
+           <Route path="/hooks" element={<Hooks />} />
+
+
 
 
 

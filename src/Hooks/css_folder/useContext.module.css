@@ -1,0 +1,13 @@
+.counter{
+    margin: 20px 20px;
+    border: 2px solid black;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    background: yellow;
+    transition: all 0.4ms ease-in 0.4ms;
+}
+
+.counter:active{
+    transform: scale(0.9);
+}

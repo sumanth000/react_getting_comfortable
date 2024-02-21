@@ -1,6 +1,6 @@
 
 .MuiDataGrid-columnHeaders.MuiDataGrid-withBorderColor.css-1iyq7zh-MuiDataGrid-columnHeaders {
-    background: #1daece;
+    background: #9fa2a2;
     font-weight: 900;
 }
 
@@ -11,7 +11,7 @@
     width: 80vw;
     margin: 20px 10px;
     border: 2px solid grey;
-    background: linear-gradient(45deg, #15c0b58d,rgba(21, 158, 189, 0.527));
+    background: linear-gradient(45deg, #595d5d8d,rgba(235, 240, 240, 0.527));
 }
 
 .css-t89xny-MuiDataGrid-columnHeaderTitle {
@@ -30,7 +30,12 @@ alignCenter .MuiDataGrid-columnHeaderTitleContainer {
     background: white;
 }
 .MuiDataGrid-row:not(.MuiDataGrid-row--dynamicHeight)>.MuiDataGrid-cell {
-    border: 2px solid white;
+    border: 0.5px solid rgb(15, 15, 15);
     overflow: hidden;
     white-space: nowrap;
+}
+
+.css-az8st9-MuiDataGrid-root .MuiDataGrid-columnHeaderTitleContainer {
+    box-shadow: 2px 2px 10px white;
+
 }

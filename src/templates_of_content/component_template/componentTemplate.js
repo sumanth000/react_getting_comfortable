@@ -1,16 +1,16 @@
 
 import compstyles from './componentTemplate.module.css'
-
+import { forwardRef } from 'react';
 const   ComponentTemplate=(props)=>{
     
-    const {label}=props;
+    const {label,ref}=props;
     return (
-        <div className={compstyles.card}>
+        <div ref={ref} className={compstyles.card}>
             <div>
                 {label}
             </div>
         </div>
     )
-}
+};
 
 export default ComponentTemplate;

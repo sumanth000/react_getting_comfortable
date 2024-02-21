@@ -39,7 +39,6 @@ const navigateFunction = () => {
             <button className={routingStyles.buttonStyle} onClick={()=>{windowFunction()}}> window Component</button>
             <button className={routingStyles.buttonStyle} onClick={()=>{navigateFunction()}}> navigate Component</button>
 
-            <button className={routingStyles.buttonStyle}> CONTEXT API</button>
             
             </div>
 
