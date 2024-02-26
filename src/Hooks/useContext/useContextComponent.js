@@ -2,14 +2,19 @@ import { useState,useEffect,useContext,createContext } from "react"
 import ComponentTemplate from "../../templates_of_content/component_template/componentTemplate";
 import TakeToPage from "../../templates_of_content/takeToPage/takeToPage";
 import contextStyles from '../css_folder/useContext.module.css'
+
+
+
 const SumanthContext = createContext();
-const useSumanthContext = () => useContext(SumanthContext);//this is custom hoook that must start with prefix 'use'
+export const useSumanthContext = () => useContext(SumanthContext);//this is custom hoook that must start with prefix 'use'
 
-const SumanthProvider = ({ children }) => {
+export const SumanthProvider = ({ children }) => {
   const [contextCount, setContextCount] = useState(100);//values passing thorugh context , not by props
-
+  let multiplyBy2=()=>{
+    setContextCount(contextCount*2);
+  }
   return (
-    <SumanthContext.Provider value={{ contextCount, setContextCount }}>
+    <SumanthContext.Provider value={{ contextCount, setContextCount,multiplyBy2 }}>
       {children}    
     </SumanthContext.Provider>
   );
@@ -29,6 +34,7 @@ let SumanthConsumer=()=>{
   return (
       <div>
            <TakeToPage url='/hooks' label='hooks page'></TakeToPage>
+           <TakeToPage url='/useContextToCheck' label='check context'></TakeToPage>
           <div >
 
           <ComponentTemplate label={'useState Data '+count+' <--> '+ ' context data '+contextCount}> </ComponentTemplate>

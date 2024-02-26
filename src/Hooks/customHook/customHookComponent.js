@@ -5,7 +5,6 @@ import useRefStyles from '../css_folder/useRef.module.css'
 
 
 let CustomHookComponent=()=>{
-    let [usestateData,setUseStateData]=useState('')
 
     let [count,increment,decrement]=useCounterHook(0);
 

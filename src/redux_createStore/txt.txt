@@ -1,0 +1,10 @@
+useDispatch : to call the functions to update the global state values
+useSelector: to read the data of global state values
+
+npm install react-redux redux
+
+
+createstore
+export the store
+
+

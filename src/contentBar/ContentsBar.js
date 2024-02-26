@@ -17,6 +17,7 @@ export default function ContentBar(){
             <button className="ContentButton"  onClick={() => goToPage('/childToParent')}>CHILD TO PARENT</button>
             <button className="ContentButton"  onClick={() => goToPage('/hooks')}>Hooks</button>
             <button className="ContentButton"  onClick={() => goToPage('/RoutingTechniques')}>Routing Techniques</button>  
+            <button className="ContentButton"  onClick={() => goToPage('/reduxComponent')}>Redux</button>  
 
 
 

@@ -1,6 +1,5 @@
 
 import compstyles from './componentTemplate.module.css'
-import { forwardRef } from 'react';
 const   ComponentTemplate=(props)=>{
     
     const {label,ref}=props;

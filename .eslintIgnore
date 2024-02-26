@@ -1,0 +1,5 @@
+{
+  "eslintIgnore": [
+    "content_script.js"
+  ]
+}
